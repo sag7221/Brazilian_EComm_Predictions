@@ -1,0 +1,13 @@
+city + product that consumes the most - geospatial visual 
+revenue by product category - top sellers
+seller/vendor location vs. top product purchases 
+forecasting model based on quarterly/annual revenue (we have order data for 2yrs. 2016-2018)
+propensity/recommendation model
+define churn on customer last purchase + review score to define churn
+
+visual - geospatial, rev(quarterly/annual), product sold by time
+propensity model based on bundle purchases?
+Churn model based on last purchase?
+
+f/u actions for mandy: 
+customer ID to customer unique ID count
