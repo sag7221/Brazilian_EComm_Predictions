@@ -16,7 +16,7 @@ order_delivered_customer_date date,
 order_estimated_delivery_date date);
 
 create table geolocation(
-geolocation_zip_code_prefix, -- dups
+geolocation_zip_code_prefix int, -- dups
 geolocation_lat float8,
 geolocation_lng float8,
 geolocation_city varchar,
