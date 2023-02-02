@@ -25,7 +25,7 @@ We identify churn by segmenting the database using an RFM machine learning model
 
 **Summary:**
 
-The overall dataset was in good in shape with the exception of the geolocation table. The table contained over 1M records with dups and unstandardized spelling of geo cities. However, the geo state values were in ISO 2 digit format like the customers and sellers table. We sanitized the geo city column by using python to standarized the unicode spelling then we clean up the dups by grouping the zip, state, latitude and longitude and taking the average on latitude and longitude where zip, city, and state are the same. The final clean output was 19.6K from over 1M records.
+The overall dataset was in good shape with the exception of the geolocation table. The table contained over 1M records with dups and unstandardized spelling of geo cities. However, the geo state values were in ISO 2 digit format like the customers and sellers table. We sanitized the geo city column by using python unicodedata library to normalize the spelling, convert to ASCII to match the city format in the customers and sellers table. Then we clean up the dups by grouping zip, city, and state, and taking the average of latitudes and longitudes in that grouping and generate a geo ID that can be assign to customers and sellers. The final clean output was 19.6K from over 1M records.
 ![This is an image](/olist_ERD.png)
 
 ![This is an image](/olist_ERD_clean.png)
