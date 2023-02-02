@@ -39,7 +39,7 @@ This process was on a rinse and repeat cycle for the rest of the csv files.
 
 
 **The Wash**
-- The solution to the filth was simple. It must be **standardized**. By standardizing the data, Mandy was able to eliminate the possiblity of errors from inconsistences in spelling and variations, removed the unnecessary information, and last but not least, the table size was reduced from one million to nineteen thousand records! Now that is what we like to call, ***clean***.  
+- The solution to the filth was simple. It must be **standardized** and **compressed**. By standardizing the data, Mandy was able to eliminate the possiblity of errors from inconsistences in spelling or variations of certain inputs. Now, for the unnecessary to become necessary, by grouping the latitude, longitude, state, and zip, and then taking the average of the latitude and longitude, where the state, city, and zip are the same (bare with us), the outcome cleaned up duplicates and reduced the table size from one million records to nineteen thousand records! Now that is what we like to call, ***clean***.  
 
 
 
