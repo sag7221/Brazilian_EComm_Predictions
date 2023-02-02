@@ -34,12 +34,12 @@ Before we can move further, we have to ensure that we have sufficent data to wor
 With dirty data you will find yourself creating problems. More problems equals wasted resources and businesses want to make money not hemorrhage money. With that being said, the process was first started by looking for four commom types of dirty data (Duplicates, errors, unnecessary information, or missing information). 
 
 **The Filth**
-- Right off that bat, Mandy was able to identify the filth in our data. The Geolocation data had some inconsistencies in the spelling of cities and states. For example Through the data you would find the input for "city" in four different variations: SP, sp, sao paulo, or Sao Paulo. This created an issues with the data in three different ways - one, we're now prone to errors, two, we have unnecessary information as well, which in turn means our table size is much bigger than it needs to be (Table size being bigger than it needs to be becomes our number three).
+- Right off that bat, Mandy was able to identify the filth in our data. The Geolocation data had some inconsistencies in the spelling of cities and states. For example Through the data you would find the input for "city" in four different variations: SP, sp, sao paulo, or Sao Paulo. This created an issues with the data in three different ways - one, we're now prone to errors, two, we have unnecessary information as well, which in turn means our table size is much bigger than it needs to be (Table size bigger than it needs to be.. is our number three).
 This process was on a rinse and repeat cycle for the rest of the csv files.
 
 
 **The Wash**
-- The solution to the filth was simple. It must be **standardized**. By standardizing the data, Mandy was able to eliminate the possiblity of errors from inconsistences in spelling and variations, removed the unnecessary information, and last but not least, the table size was reduced from one million to nineteen thousand! Now that is what we like to call, ***clean***.  
+- The solution to the filth was simple. It must be **standardized**. By standardizing the data, Mandy was able to eliminate the possiblity of errors from inconsistences in spelling and variations, removed the unnecessary information, and last but not least, the table size was reduced from one million to nineteen thousand records! Now that is what we like to call, ***clean***.  
 
 
 
