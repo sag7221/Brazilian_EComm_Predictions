@@ -19,7 +19,10 @@ So, what is the purpose of all this? Well, here is your answer, to predict churn
 
 The Results from predicting churn = ***customer retention, satisfaction, and a great revenue source.***
 
+## Resources
 
+- Fill with data source
+- Fill with software used to accomplish our objectives/task
 
 ## Analysis
 
@@ -43,9 +46,6 @@ This process was on a rinse and repeat cycle for the rest of the csv files.
 
 
 
-## Resources
-- Fill with data source
-- Fill with software used to accomplish our objectives/task
 
 ## Results
 - Fill with our outcomes/images  
