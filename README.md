@@ -25,6 +25,11 @@ We identify churn by segmenting the database using an RFM machine learning model
 **Summary:**
 
 
+![This is an image](/olist_ERD.png)
+
+![This is an image](/olist_ERD_clean.png)
+
+
 
 **Results**
 
