@@ -19,22 +19,22 @@ So, what is the purpose of all this? Well, here is your answer, to predict churn
 
 The Results from predicting churn = ***customer retention, satisfaction, and a great revenue source.***
 
-## Phase One - Exploring the Data
 
-Exploratory Analysis and Predictions based on public dataset collected on orders made at Olist Store.
-1. Fill with objectives/task to complete
-2. Fill with objectives/task to complete
-3. Fill with objectives/task to complete
-4. Fill with objectives/task to complete
-5. Fill with objectives/task to complete
+
+## Analysis
+
+### Phase One - Exploring the Data
+Before we can move further, we have to ensure that we have sufficent data to work with. When you're trying to predict churn, you will need, both qualitative and quantitative customer data, with in those two data types you will find the features that you will need for your machine learning models. Looking thru the data, we made a consensus that we had sufficent data to progress further. It's important to note that with insufficent data, you will encounter inaccurate predictions when running your model. Do make sure you avoid making this mistake early on!
+
+
+-Fill with the csv files here?
+
+
+### Phase Two - Cleaning the Data
 
 ## Resources
 - Fill with data source
 - Fill with software used to accomplish our objectives/task
-
-## Analysis
-- Fill with Analysis data
-- Fill with Images
 
 ## Results
 - Fill with our outcomes/images  
