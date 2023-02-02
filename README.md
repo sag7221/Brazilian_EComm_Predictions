@@ -24,13 +24,24 @@ The Results from predicting churn = ***customer retention, satisfaction, and a g
 ## Analysis
 
 ### Phase One - Exploring the Data
-Before we can move further, we have to ensure that we have sufficent data to work with. When you're trying to predict churn, you will need, both qualitative and quantitative customer data, with in those two data types you will find the features that you will need for your machine learning models. Looking thru the data, we made a consensus that we had sufficent data to progress further. It's important to note that with insufficent data, you will encounter inaccurate predictions when running your model. Do make sure you avoid making this mistake early on!
+Before we can move further, we have to ensure that we have sufficent data to work with. When you're trying to predict churn, you will need, both qualitative and quantitative customer data. Within those two data types you will find the features that you will need for your machine learning models. Looking thru the data, we made a consensus that we had sufficent data to progress further. It's important to note that with insufficent data, you will encounter inaccurate predictions when running your model. Do make sure you avoid making this mistake early on!
 
 
 -Fill with the csv files here?
 
 
 ### Phase Two - Cleaning the Data
+With dirty data you will find yourself creating problems. More problems equals wasted resources and businesses want to make money not hemorrhage money. With that being said, the process was first started by looking for four commom types of dirty data (Duplicates, errors, unnecessary information, or missing information). 
+
+**The Filth**
+- Right off that bat, Mandy was able to identify the filth in our data. The Geolocation data had some inconsistencies in the spelling of cities and states. For example Through the data you would find the input for "city" in four different variations: SP, sp, sao paulo, or Sao Paulo. This created an issues with the data in three different ways - one, we're now prone to errors, two, we have unnecessary information as well, which in turn means our table size is much bigger than it needs to be(Table size being bigger than it needs to be becomes our number three).
+This process was on a rinse and repeat cycle for the rest of the csv files.
+
+
+**The Wash**
+- The solution to the filth was simple. It must be **standardized**. By standardizing the data, Mandy was able to eliminate the possiblity of errors from inconsistences in spelling and variations, removed the unnecessary information, and last but not least, the table size was reduced from one million to nineteen thousand! Now that is what we like to call, ***clean***.  
+
+
 
 ## Resources
 - Fill with data source
