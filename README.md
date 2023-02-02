@@ -9,6 +9,7 @@
 * Steven Salazar
 
 **Overview**
+
 This project reviews and analysis churn on a set of relational orders & products database from Olist. Olist is an SMB commerce enabler ecosystem, it connects merchants to marketplaces, that specilizes in the fileds of logistics and capital. Out data is sourced from Kaggle. It contains 9 datasets: 
 1. Customers
 2. Sellers
@@ -29,6 +30,7 @@ The overall dataset was in good in shape with the exception of the geolocation t
 
 ![This is an image](/olist_ERD_clean.png)
 
+ML models:
 
 
 **Results**
