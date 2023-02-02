@@ -2,7 +2,7 @@
 # Brazilian_EComm_Predictions
 
 ## Team Members
-* Shilpa Gollamuda (Team Leader)
+* Shilpa Gollamuda ***(Team Leader)***
 * Mandy Fu
 * Shrouq Alelaumi
 * Armine Khananyan
@@ -17,7 +17,7 @@ In this review and analysis you'll see the tools that will be and were used to a
 So, what is the purpose of all this? Well, here is your answer, to predict churn and understand why it's important. To understand what churn is we first have to provide you the definition - **a tendency of customers to stop being a client of that service** - in other words, for this business, no longer making purchases from Olist.
 
 
-The Results from predicting churn = customer retention, satisfaction, and a great revenue source.
+The Results from predicting churn = ***customer retention, satisfaction, and a great revenue source.***
 
 ## Phase One - Exploring the Data
 
