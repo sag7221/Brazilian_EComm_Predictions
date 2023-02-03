@@ -77,10 +77,14 @@ Here, we will walk you through the construction of our machine learning models a
 - Next, we need frequency. The features used to get frequency were the customer unique ID and order ID: this told how frequent our customers made purchases.
 - Lastly, the monetary value. Features selected for this portion were, again, the customer unique ID and then the payment value. This gives us how much the customers spent on purchases.
 - Now that our RFM is defined, we merge the data together to create a new table so we can see our new data. 
-- Next, we check for outliers by using a box plot. ***see below***
+- Next, we check for outliers by using a box plot. ***See below***
 
 
 <img src="Images/Recency_box_plot.png" width=320>     <img src="Images/Frequency_box_plot.png" width=320>     <img src="Images/Monetary_box_plot.png" width=320>
+
+**The Outliers**
+- From a glance we can see that we have some outliers. What is an outlier? Outliers are values within a dataset that vary greatly from the others; they're either much larger, or significantly smaller. With that being said, we want to make sure we reliably remove the outliers that we don't need, so we use the 1.5 IQR rule. All this means is that the data that falls below the lower quartile ( the value under which 25% of data points are found when they are arranged in increasing order) and above the upper quartile (the value under which 75% of data point are found when arranged in increasing order) will be our outliers and then we will make our decision if this data will be of any use to us.
+- The decision was made to remove only the outliers from recency and monetary columns only. We determined that removing the outliers from frequency will skew our data so we will keep them. The amount to be removed from recency and monetary are the outliers that fall with +/- 5% of the boundaries.
   
 
 <img src="Images/Distribution_of_Segments.png" width=950>
