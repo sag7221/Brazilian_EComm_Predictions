@@ -75,7 +75,8 @@ Here, we will walk you through the construction of our machine learning models a
 
 - The first step to constructing the RFM model was to define each category with specific features. To get our recency, we needed to use the customer unique ID and the order purchase timestamps. With those in our formula we were able to get the days in-between present day and last purchase.
 - Next, we need frequency. The features used to get frequency were the customer unique ID and order ID: this told how frequent our customers made purchases.
-- Lastly, the monetary value. Features selected for this portion were, again, the customer unique ID and then the payment value; giving us how much the customers spent or purchases. 
+- Lastly, the monetary value. Features selected for this portion were, again, the customer unique ID and then the payment value. This gives us how much the customers spent on purchases.
+- Now that we have defined our RFM we have to  
 
 <img src="Images/Distribution_of_Segments.png" width=950>
 
