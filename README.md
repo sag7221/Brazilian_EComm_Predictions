@@ -85,7 +85,6 @@ Here, we will walk you through the construction of our machine learning models a
 **The Outliers**
 
 
-*What is an outlier? Outliers are values within a dataset that vary greatly from the others; they're either much larger, or significantly smaller.*
 - From a glance we can see that we have some outliers. With that being said, we want to make sure we reliably remove the outliers that we don't need, so we use the 1.5 IQR rule. All this means is that the data that falls below the lower quartile ( the value under which 25% of data points are found when they are arranged in increasing order) and above the upper quartile (the value under which 75% of data point are found when arranged in increasing order) will be our outliers and then we will make our decision if this data will be of any use to us.
 - The decision was made to remove only the outliers from recency and monetary columns only. We determined that removing the outliers from frequency will skew our data so we will keep them. The amount to be removed from recency and monetary are the outliers that fall with +/- 5% of the boundaries.
 
