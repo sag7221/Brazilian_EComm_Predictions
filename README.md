@@ -92,6 +92,9 @@ Here, we will walk you through the construction of our machine learning models a
 
 **Creating the Segments and Linking the Scores**
 
+
+Labels need to be created and assigned, and then we add the segments. **See below**
+
   
 
 <img src="Images/Distribution_of_Segments.png" width=950>
