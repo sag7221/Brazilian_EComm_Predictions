@@ -47,7 +47,7 @@ This process was on a rinse and repeat cycle for the rest of the csv files.
 
 ### Phase Three - Construction
 
-Here, we will walk you through the construction of our machine learning models and challenges that we faced.
+Here, we will walk you through the construction of our machine learning models and challenges that we faced. Also, Shrouq was our specialist when it came to the construct of our machine learning models. 
 
 
 
@@ -64,7 +64,18 @@ Here, we will walk you through the construction of our machine learning models a
 
 **Recency, Frequency, Monetary**
 
-- 
+*What is RFM?*
+1. Recency - How recently did the customer make a purchase?
+2. Frequency - How often does the customer make purchases?
+3. Monetary Value - How much do your customers spend per purchase?
+
+
+*Why RFM?*
+1. The first problem we ran into was not having the data labeled for prediction. RFM was the fix.
+
+- The first step to constructing the RFM model was to define each category with specific features. To get our recency, we needed to use the customer unique ID and the order purchase timestamps. With those in our formula we were able to get the days in-between present day and last purchase.
+- Next, we need frequency. The features used to get frequency were the customer unique ID and order ID: this told how frequent our customers made purchases.
+- Lastly, the monetary value. Features selected for this portion were, again, the customer unique ID and then the payment value; giving us how much the customers spent or purchases. 
 
 <img src="Images/Distribution_of_Segments.png" width=950>
 
