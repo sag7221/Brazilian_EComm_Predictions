@@ -10,12 +10,24 @@
 
 ## Overview
 
+
 To review and provide an analysis breakdown of a dataset from an SMB (small and midsized buisness) known as Olist; by doing so, we will predict churn. 
 In this review and analysis you'll see the tools that will be and were used to accomplish this.
 
-
 ## Purpose
 So, what is the purpose of all this? Well, here is your answer, to predict churn and understand why it's important.
+
+This project reviews and analysis churn on a set of relational orders & products database from Olist. Olist is an SMB commerce enabler ecosystem, it connects merchants to marketplaces, that specilizes in the fileds of logistics and capital. Our data is sourced from Kaggle. It contains 9 datasets: 
+1. Customers
+2. Sellers
+3. Orders
+4. Order Items
+5. Order Payments
+6. Order Reviews
+7. Products
+8. Product Category Name
+9. Geolocation
+
 
 We identify churn by segmenting the database using an RFM machine learning model and define it by.... We then use these segments as labels in an AUC model to predict churn. In addition we engineered an addition XXX features to bring the accuracy rate to 86%. 
 
@@ -106,9 +118,6 @@ From here we transform the data into what will show us the answers we've been wo
   
 
 <img src="Images/Distribution_of_Segments.png" width=950>
-
-
-
 
 
 
