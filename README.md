@@ -93,7 +93,16 @@ Here, we will walk you through the construction of our machine learning models a
 **Creating the Segments and Linking the Scores**
 
 
-Labels need to be created and assigned, and then we add the segments. **See below**
+We take our new data, create the labels, assigned them, and then we add the segments. The segments will be matched up with the appropriate scores, letting us know where our customers stand. Here's the Source we used to assist us in the segments: https://documentation.bloomreach.com/engagement/docs/rfm-segmentation 
+
+
+<img src="Images/RFM_Segmentation.png" width=950>
+
+
+**Transformation**
+
+
+From here we transform the data into what will show us the answers we've been working towards.
 
   
 
