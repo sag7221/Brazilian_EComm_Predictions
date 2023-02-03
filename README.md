@@ -49,8 +49,19 @@ This process was on a rinse and repeat cycle for the rest of the csv files.
 
 Here, we will walk you through the construction of our machine learning models and challenges that we faced.
 
+
+
 **Roundtable**
+
+
+
+<img src="Images/Roundtable.png" width=200>
 - Like all great and successful orginizations, there must be a discussion. Here is where you want to share your ideas and thought process during the construction phase. If you already have great communication through github, then good, but you can still get together to get more clairification on certain task/objectives you're trying to accomplish or even just review what has been completed so far. We used this everytime we got together to get a better understanding of the direction we were heading and ensuring that the path was clear. When obstacles presented themselves we knew that we had the right team to challenge or question if what we were doing was going to be efficient and effective. Below we will start with the RFM model and move foreward from there. Don't forget, communication is key!
+
+
+**RFM Model**
+
+
 
 
 
