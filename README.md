@@ -47,27 +47,15 @@ This process was on a rinse and repeat cycle for the rest of the csv files.
 
 ### Phase Three - Construction
 
-Here, we will walk you through the construction of our machine learning models and challenges that we faced. Also, Shrouq was our specialist when it came to the construct of our machine learning models. 
-
-
-
-**Roundtable**
-
-
-
-<img src="Images/Roundtable.png" width=200>
-
-
-
-- Like all great and successful orginizations, there must be a discussion. Here is where you want to share your ideas, thought process, and updates to ensure the construction phase goes as smooth as possible. If you already have great communication through github, then good, but you can still get together to get more clairification on certain task/objectives you're trying to accomplish or even just review what has been completed so far. We used this everytime we got together to get a better understanding of the direction we were heading and ensuring that the path was clear. When obstacles presented themselves we knew that we had the right team to solve, challenge, and question if what we were doing was going to give us efficient and effective results. Below we will start with the RFM model and move foreward from there. Don't forget, communication is key!
+Here, we will walk you through the construction of our machine learning models and challenges that we faced.
 
 
 **Recency, Frequency, Monetary**
 
 *What is RFM?*
-1. Recency - How recently did the customer make a purchase?
-2. Frequency - How often does the customer make purchases?
-3. Monetary Value - How much do your customers spend per purchase?
+1. Recency - How recently did the customer make the last purchase?
+2. Frequency - How many purchases did the customer make?
+3. Monetary Value - How much did the customer spend total?
 
 
 *Why RFM?*
@@ -85,14 +73,13 @@ Here, we will walk you through the construction of our machine learning models a
 **The Outliers**
 
 
-- From a glance we can see that we have some outliers. With that being said, we want to make sure we reliably remove the outliers that we don't need, so we use the 1.5 IQR rule. All this means is that the data that falls below the lower quartile ( the value under which 25% of data points are found when they are arranged in increasing order) and above the upper quartile (the value under which 75% of data point are found when arranged in increasing order) will be our outliers and then we will make our decision if this data will be of any use to us.
-- The decision was made to remove only the outliers from recency and monetary columns only. We determined that removing the outliers from frequency will skew our data so we will keep them. The amount to be removed from recency and monetary are the outliers that fall with +/- 5% of the boundaries.
+- From a glance we can see that we have some outliers. With that being said, we want to make sure we reliably remove the outliers that we don't need, so we use the 1.5 IQR rule.
 
 
 **Creating the Segments and Linking the Scores**
 
 
-We take our new data, create the labels, assigned them, and then we add the segments. The segments will be matched up with the appropriate scores, letting us know where our customers stand. Here's the Source we used to assist us in the segments: https://documentation.bloomreach.com/engagement/docs/rfm-segmentation 
+We take our new data, create the labels, assign them, and then we add the segments. The segments will be matched up with the appropriate scores, letting us know where our customers stand. Here is the source we referred to: https://documentation.bloomreach.com/engagement/docs/rfm-segmentation 
 
 
 <img src="Images/RFM_Segmentation.png" width=950>
