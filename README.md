@@ -78,6 +78,9 @@ Here, we will walk you through the construction of our machine learning models a
 - Lastly, the monetary value. Features selected for this portion were, again, the customer unique ID and then the payment value. This gives us how much the customers spent on purchases.
 - Now that our RFM is defined, we merge the data together to create a new table so we can see our new data. 
 - Next, we check for outliers by using a box plot. ***see below***
+
+
+<img src="Images/Recency_box_plot.png" width=320>     <img src="Images/Frequency_box_plot.png" width=320>     <img src="Images/Monetary_box_plot.png" width=320>
   
 
 <img src="Images/Distribution_of_Segments.png" width=950>
