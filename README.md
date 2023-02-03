@@ -14,7 +14,7 @@ To review and provide an analysis breakdown of a dataset from an SMB (small and 
 In this review and analysis you'll see the tools that will be and were used to accomplish this.
 
 ## Purpose
-So, what is the purpose of all this? Well, here is your answer, to predict churn and understand why it's important. To understand what churn is we first have to provide you the definition - **a tendency of customers to stop being a client of that service** - in other words, for this business, no longer making purchases from Olist.
+So, what is the purpose of all this? Well, here is your answer, to predict churn and understand why it's important. To understand what churn is we first have to provide you the definition - **a tendency of customers to stop being a client of that service** - in other words, for this business, customers no longer making purchases from Olist.
 
 
 The Results from predicting churn = ***customer retention, satisfaction, and a great revenue source.***
