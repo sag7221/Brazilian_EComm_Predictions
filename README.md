@@ -13,8 +13,21 @@
 To review and provide an analysis breakdown of a dataset from an SMB (small and midsized buisness) known as Olist; by doing so, we will predict churn. 
 In this review and analysis you'll see the tools that will be and were used to accomplish this.
 
+
 ## Purpose
-So, what is the purpose of all this? Well, here is your answer, to predict churn and understand why it's important. To understand what churn is we first have to provide you the definition - **a tendency of customers to stop being a client of that service** - in other words, for this business, customers no longer making purchases from Olist.
+So, what is the purpose of all this? Well, here is your answer, to predict churn and understand why it's important.
+
+We identify churn by segmenting the database using an RFM machine learning model and define it by.... We then use these segments as labels in an AUC model to predict churn. In addition we engineered an addition XXX features to bring the accuracy rate to 86%. 
+
+**Summary:**
+
+The overall dataset was in good shape with the exception of the geolocation table. The table contained over 1M records with dups and unstandardized spelling of geo cities. However, the geo state values were in ISO 2 digit format like the customers and sellers table. We sanitized the geo city column by using python unicodedata library to normalize the spelling, convert to ASCII to match the city format in the customers and sellers table. Then we clean up the dups by grouping zip, city, and state, and taking the average of latitudes and longitudes in that grouping and generate a geo ID that can be assign to customers and sellers. The final clean output was 19.6K from over 1M records.
+![This is an image](/olist_ERD.png)
+
+![This is an image](/olist_ERD_clean.png)
+
+ML models:
+
 
 
 The Results from predicting churn = ***customer retention, satisfaction, and a great revenue source.***
