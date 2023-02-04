@@ -14,8 +14,6 @@
 To review and provide an analysis breakdown of a dataset from an SMB (small and midsized buisness) known as Olist; by doing so, we will predict churn. 
 In this review and analysis you'll see the tools that will be and were used to accomplish this.
 
-## Purpose
-So, what is the purpose of all this? Well, here is your answer, to predict churn and understand why it's important.
 
 This project reviews and analysis churn on a set of relational orders & products database from Olist. Olist is an SMB commerce enabler ecosystem, it connects merchants to marketplaces, that specilizes in the fileds of logistics and capital. Our data is sourced from Kaggle. It contains 9 datasets: 
 1. Customers
@@ -38,7 +36,7 @@ The overall dataset was in good shape with the exception of the geolocation tabl
 
 ![This is an image](/olist_ERD_clean.png)
 
-ML models:
+
 
 
 
