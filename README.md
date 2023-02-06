@@ -11,7 +11,7 @@
 ## Overview
 
 
-To review and provide an analysis breakdown of a dataset from an SMB (small and midsized buisness) known as Olist; the objective is to predict churn. 
+To review and provide an analysis breakdown of a dataset from an SMB (small and midsized buisness) known as Olist; by doing so, we will predict churn. 
 In this review and analysis you'll see the tools that will be and were used to accomplish this.
 
 
@@ -122,8 +122,82 @@ From here we transform the data into what will show us the answers we've been wo
 ## Results
 - Fill with our outcomes/images  
 
-## Recommendations
-- Fill with the recommendations
+## Product Recommendations and Market Basket Analysis
+Given that we have done customer segmentation and have identified the churn, we are now targetting the other segments to retain customers and provide a better experience through our product recommendation system.
+
+For product recommendations, one of the challenges we faced is that maximum number of transactions are single product purchases. But given this, we still need to figure out the market basket analysis.
+Also, <i>explicit</i> vs <i>implicit</i> data.
+
+Having access to explicit data that users have provided is not possible in this case, so we relied entirely on data generated from user activities on site.
+
+Selecting the Algorithm
+Association Rule Mining(ARM) can be used to provide session-based recommendations and Apriori is one such widely accepted ARM algorithm. We wanted to establish rules to see if there were products pairs being purchased together, or what is the association of one product with the others.
+
+General idea behind the Apriori algorithm:
+We want to establish the the value of the below variables:
+#### Support ####
+Support refers to the popularity of item and can be calculated by finding the number of transactions containing a particular item divided by the total number of transactions.
+
+Support(diaper) = (Transactions containing (diaper))/(Total Transactions)
+Support(diaper) = 150 / 1000 = 15 %
+
+#### Confidence ####
+Confidence refers to the likelihood that an item B is also bought if item A is bought. It can be calculated by finding the number of transactions where A and B are bought together, divided by the total number of transactions where A is bought. Mathematically, it can be represented as:
+
+Confidence(A → B) = (Transactions containing both (A and B))/(Transactions containing A)
+
+#### Lift ####
+Lift refers to the increase in the ratio of the sale of B when A is sold.
+Lift(A –> B) can be calculated by dividing Confidence(A -> B) divided by Support(B).
+Mathematically it can be represented as:
+Lift(A→B) = (Confidence (A→B))/(Support (B))
+
+Lift(milk → diaper) = (Confidence (milk → diaper))/(Support (diaper))
+Lift(milk → diaper) = 25 / 15 = 1.66
+
+#### Steps involved in APriori Algorithm ####
+
+For larger dataset, this computation can make the process extremely slow.
+To speed up the process, we need to perform the following steps:
+
+1. Set a minimum value for support and confidence. This means that we are only interested in finding rules for the items that have certain default existence (e.g. support) and have a minimum value for co-occurrence with other items (e.g. confidence).
+2. Extract all the subsets having a higher value of support than a minimum threshold.
+3. Select all the rules from the subsets with confidence value higher than the minimum threshold.
+4. Order the rules by descending order of Lift.
+
+##### Working on our dataset #####
+
+**Importing and preparing our dataset**
+For this we first identified tables that are required and merged them. These are the tables that were merged:
+1. olist_products_dataset.csv
+2. product_category_name_translation.csv
+3. olist_order_items_dataset.csv
+4. olist_orders_dataset.csv
+5. olist_customers_dataset.csv
+
+
+After merging these tables, we get a dataframe like this:
+Images 1
+
+**Data Preprocessing**
+The Apriori library requires the dataset to be in the form of list of lists of transactions. We then prepare this.
+Next step, we identify the columns that we need to get the list of transactions made by customers
+Image 2
+
+**Using Apriori**
+We now identify the frequent item sets by implementing apriori on our encoded list of lists, with a minimum of support of 0.001
+Image 3 frequent_itemsets_3
+
+We now create association rules with frequent itemsets and we get 26 rules in all.
+Image 4 - association_rules 
+
+With this we now sort the rules to get rules with highest lift.
+Image 5 - lookup table
+
+From the lookup table we can see that the rule that works best is:
+Image 6 - top rules
+
+
 
 ## Summary
 -Recap everything from top to bottom
