@@ -151,9 +151,9 @@ Lift(A –> B) can be calculated by dividing Confidence(A -> B) divided by Suppo
 
 Mathematically it can be represented as:  
 
-$Lift(A→B) = (Confidence (A→B))/(Support (B))
+$Lift(A→B) = (Confidence (A→B))/(Support (B))$
 
-Lift(milk → diaper) = (Confidence (milk → diaper))/(Support (diaper))$
+$Lift(milk → diaper) = (Confidence (milk → diaper))/(Support (diaper))$
 
 #### Steps involved in Apriori Algorithm ####
 
