@@ -138,24 +138,24 @@ We want to establish the the value of the below variables:
 #### Support ####
 Support refers to the popularity of item and can be calculated by finding the number of transactions containing a particular item divided by the total number of transactions.
 
-Support(diaper) = (Transactions containing (diaper))/(Total Transactions)
-Support(diaper) = 150 / 1000 = 15 %
+$Support(diaper) = (Transactions containing (diaper))/(Total Transactions)$
 
 #### Confidence ####
 Confidence refers to the likelihood that an item B is also bought if item A is bought. It can be calculated by finding the number of transactions where A and B are bought together, divided by the total number of transactions where A is bought. Mathematically, it can be represented as:
 
-Confidence(A → B) = (Transactions containing both (A and B))/(Transactions containing A)
+$Confidence(A → B) = (Transactions containing both (A and B))/(Transactions containing A)$
 
 #### Lift ####
 Lift refers to the increase in the ratio of the sale of B when A is sold.
-Lift(A –> B) can be calculated by dividing Confidence(A -> B) divided by Support(B).
-Mathematically it can be represented as:
-Lift(A→B) = (Confidence (A→B))/(Support (B))
+Lift(A –> B) can be calculated by dividing Confidence(A -> B) divided by Support(B).  
 
-Lift(milk → diaper) = (Confidence (milk → diaper))/(Support (diaper))
-Lift(milk → diaper) = 25 / 15 = 1.66
+Mathematically it can be represented as:  
 
-#### Steps involved in APriori Algorithm ####
+$Lift(A→B) = (Confidence (A→B))/(Support (B))
+
+Lift(milk → diaper) = (Confidence (milk → diaper))/(Support (diaper))$
+
+#### Steps involved in Apriori Algorithm ####
 
 For larger dataset, this computation can make the process extremely slow.
 To speed up the process, we need to perform the following steps:
