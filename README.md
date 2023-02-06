@@ -11,7 +11,7 @@
 ## Overview
 
 
-To review and provide an analysis breakdown of a dataset from an SMB (small and midsized buisness) known as Olist; by doing so, we will predict churn. 
+To review and provide an analysis breakdown of a dataset from an SMB (small and midsized buisness) known as Olist; the objective is to predict churn. 
 In this review and analysis you'll see the tools that will be and were used to accomplish this.
 
 
