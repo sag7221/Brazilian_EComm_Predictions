@@ -167,7 +167,8 @@ To speed up the process, we need to perform the following steps:
 
 ##### Working on our dataset #####
 
-**Importing and preparing our dataset**
+**Importing and preparing our dataset**  
+
 For this we first identified tables that are required and merged them. These are the tables that were merged:
 1. olist_products_dataset.csv
 2. product_category_name_translation.csv
@@ -197,7 +198,7 @@ We now identify the frequent item sets by implementing apriori on our encoded li
 We now create association rules with frequent itemsets and we get 26 rules in all.  
 
 <img src="Images/association_rules_4.png">  
- 
+
 
 With this we now sort the rules to get rules with highest lift.  
 
