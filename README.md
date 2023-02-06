@@ -178,24 +178,25 @@ For this we first identified tables that are required and merged them. These are
 
 After merging these tables, we get a dataframe like this:
 Images 1
+<img src="Images/Merged_Table_1.png" width=320>    
 
 **Data Preprocessing**
 The Apriori library requires the dataset to be in the form of list of lists of transactions. We then prepare this.
 Next step, we identify the columns that we need to get the list of transactions made by customers
-Image 2
+<img src="Images/customer_transactions_list_2.png" width=320>   
 
 **Using Apriori**
 We now identify the frequent item sets by implementing apriori on our encoded list of lists, with a minimum of support of 0.001
-Image 3 frequent_itemsets_3
+<img src="Images/frequent_itemsets_3.png" width=320> 
 
 We now create association rules with frequent itemsets and we get 26 rules in all.
-Image 4 - association_rules 
+<img src="Images/association_rules_4.png" width=320> 
 
 With this we now sort the rules to get rules with highest lift.
-Image 5 - lookup table
+<img src="Images/lookup_table_5.png" width=320> 
 
 From the lookup table we can see that the rule that works best is:
-Image 6 - top rules
+<img src="Images/final_products_6.png" width=320> 
 
 
 
