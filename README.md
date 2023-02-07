@@ -1,8 +1,7 @@
-#### THIS IS JUST A DRAFT OF WHAT THE LAYOUT WILL POSSIBLY LOOK LIKE. MAKE RECOMMENDATION FOR CHANGES ON HERE OR SLACK. 
 # Brazilian_EComm_Predictions
 
 ## Team Members
-* Shilpa Gollamuda ***(Team Leader)***
+* Shilpa Gollamudi ***(Team Leader)***
 * Mandy Fu
 * Shrouq Alelaumi
 * Armine Khananyan
