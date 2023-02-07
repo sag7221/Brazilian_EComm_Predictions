@@ -130,7 +130,17 @@ Also, <i>explicit</i> vs <i>implicit</i> data.
 
 Having access to explicit data that users have provided is not possible in this case, so we relied entirely on data generated from user activities on site.
 
-Selecting the Algorithm
+### Initial Data Exploration ###  
+
+### Top popular products ###  
+
+<img src="Images/top_10_popular_products.png">  
+
+### High Revenue Products ###  
+
+<img src="Images/top_10_high_revenue_products.png"> 
+
+### Selecting the Algorithm ###
 Association Rule Mining(ARM) can be used to provide session-based recommendations and Apriori is one such widely accepted ARM algorithm. We wanted to establish rules to see if there were products pairs being purchased together, or what is the association of one product with the others.
 
 General idea behind the Apriori algorithm:
@@ -165,9 +175,7 @@ To speed up the process, we need to perform the following steps:
 3. Select all the rules from the subsets with confidence value higher than the minimum threshold.
 4. Order the rules by descending order of Lift.
 
-### Initial Data Exploration ###  
-
-<img src="Images/top_10_high_revenue_products.png">    
+   
 
 ### Working on our dataset ###
 
@@ -210,7 +218,7 @@ With this we now sort the rules to get rules with highest lift.
 
 From the lookup table we can see that the rule that works best is:  
 
-<img src="Images/final_products_6.png"> 
+<img src="Images/final_products.png"> 
 
 
 
