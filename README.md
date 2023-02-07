@@ -232,6 +232,6 @@ From the lookup table we can see that the rule that works best is:
 
 
 
-## Summary
--Recap everything from top to bottom
+## Summary and Recommendations
+- Recommendations from our findings
 
