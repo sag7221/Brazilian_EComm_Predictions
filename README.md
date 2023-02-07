@@ -132,14 +132,13 @@ To improve the churn prediction performnce, appropriate features are constructed
 
 - Customer state
 - Seller state
-- Delivery_time
-- review_upload_time
-- debt_customer
-- cash_customer
-- Working Days Estimated Delivery Time: Gets the days between order approval and estimated delivery date. A customer might be unsatisfied if he is told that the estimated time is big.
-- Working Days Actual Delivery Time: Gets the days between order approval and delivered customer date. A customer might be more satisfied if he gets the product faster.
-- Working Days Delivery Time Delta: The difference between the actual and estimated date. If negative was delivered early, if positive was delivered late. A customer might be more satisfied if the order arrives sooner than expected, or unhappy if he receives after the deadline
-- Is Late: Binary variable indicating if the order was delivered after the estimated date.
+- Review upload time
+- Debt customer
+- Cash customer
+- Working days estimated delivery time: Gets the days between order approval and estimated delivery date. A customer might be unsatisfied if he is told that the estimated time is big.
+- Working days actual delivery time: Gets the days between order approval and delivered customer date. A customer might be more satisfied if he gets the product faster.
+- Working days delivery time delta: The difference between the actual and estimated date. If negative was delivered early, if positive was delivered late. A customer might be more satisfied if the order arrives sooner than expected, or unhappy if he receives after the deadline
+- Is late: Binary variable indicating if the order was delivered after the estimated date.
 - Product category
 - Review score
 - Freight value
