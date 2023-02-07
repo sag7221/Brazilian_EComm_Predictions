@@ -41,10 +41,12 @@ The overall dataset was in good shape with the exception of the geolocation tabl
 
 The Results from predicting churn = ***customer retention, satisfaction, and a great revenue source.***
 
-## Resources
+## Tools and Libraries
 
-- Fill with data source
-- Fill with software used to accomplish our objectives/task
+- Python(Pandas, Numpy)
+- Tableau, Matplotlib
+- Sklearn
+- SQL, PostGres
 
 ## Analysis
 
