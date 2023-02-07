@@ -165,6 +165,10 @@ To speed up the process, we need to perform the following steps:
 3. Select all the rules from the subsets with confidence value higher than the minimum threshold.
 4. Order the rules by descending order of Lift.
 
+### Initial Data Exploration ###  
+
+<img src="Images/top_10_high_revenue_products.png">    
+
 ### Working on our dataset ###
 
 **Importing and preparing our dataset**  
