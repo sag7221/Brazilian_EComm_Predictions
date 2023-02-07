@@ -162,9 +162,16 @@ The results of feature permuation indicates that some features are not helpful f
 
 <img width="645" alt="Screenshot 2023-02-07 at 2 11 45 PM" src="https://user-images.githubusercontent.com/48078471/217378496-e5cfa002-98a2-4c2e-b817-89f3bd9a15cc.png">
 
+**Model Evaluation for Churn Prediction**
+Different ML models are tested for churn prediction, such as: ensemble models (random forest, gradient boosting, adaptive boosting), multi-layer perceptron (MLP), support vector machine (SVM), logistic regression, k-nearest neighbors (KNN), decision tree, and naive bayes classifer. 5-fold cross-valiadtion is used to evaluate the model perfromnce. 
 
-## Results
-- Fill with our outcomes/images  
+<img width="404" alt="Screenshot 2023-02-07 at 2 17 37 PM" src="https://user-images.githubusercontent.com/48078471/217379458-f5513494-3492-4372-9dad-8877385d22de.png">
+
+Several evaluation metrics are collected through the k-fold cross-validation to better refelct the perfromnce under highly imbalanced dataset, such as: accurcay, recall, precision, AUC. The model excution time is comapred as well. The results indicated that Random forest & gradient boosting are the best in terms of differnt evaluation metics and with an effecint training time as well as shown below.
+
+<img width="1099" alt="Screenshot 2023-02-07 at 2 21 45 PM" src="https://user-images.githubusercontent.com/48078471/217380164-237b2972-0441-42b8-b62b-9929845c6a9e.png">
+
+<img width="537" alt="Screenshot 2023-02-07 at 2 21 55 PM" src="https://user-images.githubusercontent.com/48078471/217380191-9934bcf9-977c-41c0-871e-1ea7fe70cf82.png">
 
 ## Product Recommendations and Market Basket Analysis
 Given that we have done customer segmentation and have identified the churn, we are now targetting the other segments to retain customers and provide a better experience through our product recommendation system.
