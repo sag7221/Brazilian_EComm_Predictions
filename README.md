@@ -128,7 +128,7 @@ From here we transform the data into what will show us the answers we've been wo
 
 **Feature Engineering for Churn Prediction**
 
-To improve the churn prediction performnce, approratie feature are constructed from the data, as follows:
+To improve the churn prediction performnce, appropriate features are constructed to use as an input for churn prediction model, as follows:
 
 - Customer state
 - Seller state
@@ -145,6 +145,23 @@ To improve the churn prediction performnce, approratie feature are constructed f
 - Freight value
 - Payment value
 - Payment installments
+
+The output variable is "Is churn", a binary variable indicating if the customer has churned or not. 
+
+**Handling Imbalanced Dataset for Churn Prediction**
+
+The churn problem is highly imbalnced dataset, where majorty of data is labled as no churn and limited sample size has churn label. Therefore, differnt class distribution balancing techniques was used to remove bais, such as: randomundersampling (RUS), Synthetic Minority Oversampling Technique (SMOTE), and SMOTE and Edited Nearest Neighbor (ENN) method (SMOTEENN). AUC evaluation metric is used to evaluate those techniques perfromnce in handling imbalnced dataset. The results indicates that RUS is the best in terms of AUC (87%) compared to 80% for SOMTE and 85% for SOMTEENN. In addition, RUS technique is more efficient as the training size is smaller.
+
+**Feature Selection for Churn Prediction**
+
+To improve churn prediction performnce, imrpove model's effeicincy, and avoid over-fiiting, permuation feature selection technique is used to eliminte irrelevant features. In this method, each feature is corputed and then model perfromnce is measured. if model perfromnce drops, this indicate that feature is important for prediction. 
+
+<img width="608" alt="Screenshot 2023-02-07 at 2 09 16 PM" src="https://user-images.githubusercontent.com/48078471/217378110-ea00360f-b6e7-4bb9-b51c-dfa9c4b3b21d.png">
+
+The results of feature permuation indicates that some features are not helpful for churn prediction, and those got eliminated in next model evalution step.
+
+<img width="645" alt="Screenshot 2023-02-07 at 2 11 45 PM" src="https://user-images.githubusercontent.com/48078471/217378496-e5cfa002-98a2-4c2e-b817-89f3bd9a15cc.png">
+
 
 ## Results
 - Fill with our outcomes/images  
