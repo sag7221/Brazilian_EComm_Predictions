@@ -27,7 +27,7 @@ This project reviews and analysis churn on a set of relational orders & products
 9. Geolocation
 
 
-The data for churn prediction is labeled based on the outcome of recency frequncy monetary (RFM) customer segmentation technique. Differnt machine learning models were tested and evaulated using on 5-fold cross validation. Several evaluation metrics are collected and compared to identify the best model in terms of execution time and models' prediction perfromnce, such as: accuarcy, precision, recall, and AUC. The results showed that ensemble learning models (random forest and gradient boosting) are the best with AUC of 86%. 
+The data for churn prediction is labeled based on the outcome of recency frequncy monetary (RFM) customer segmentation technique. Differnt machine learning models were tested and evaulated using on 5-fold cross validation. Several evaluation metrics are collected and compared to identify the best model in terms of execution time and models' prediction perfromnce, such as: accuarcy, precision, recall, and AUC. The results showed that ensemble learning models (random forest and gradient boosting) are the best with AUC of 88%. 
 
 ## Dataset Summary and Challenges
 
@@ -167,7 +167,7 @@ Different ML models are tested for churn prediction, such as: ensemble models (r
 
 <img width="404" alt="Screenshot 2023-02-07 at 2 17 37 PM" src="https://user-images.githubusercontent.com/48078471/217379458-f5513494-3492-4372-9dad-8877385d22de.png">
 
-Several evaluation metrics are collected through the k-fold cross-validation to better refelct the perfromnce under highly imbalanced dataset, such as: accurcay, recall, precision, AUC. The model excution time is comapred as well. The results indicated that Random forest & gradient boosting are the best in terms of differnt evaluation metics and with an effecint training time as well as shown below.
+Several evaluation metrics are collected through the k-fold cross-validation to better refelct the perfromnce under highly imbalanced dataset, such as: accurcay, recall, precision, AUC. The model excution time is comapred as well. The results indicated that Random forest & gradient boosting are the best with AUC of 88%.
 
 <img width="1099" alt="Screenshot 2023-02-07 at 2 21 45 PM" src="https://user-images.githubusercontent.com/48078471/217380164-237b2972-0441-42b8-b62b-9929845c6a9e.png">
 
