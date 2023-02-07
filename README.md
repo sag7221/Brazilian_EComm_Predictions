@@ -31,6 +31,20 @@ We identify churn by segmenting the database using an RFM machine learning model
 ## Dataset Summary and Challenges
 
 The overall dataset was in good shape with the exception of the geolocation table. The table contained over 1M records with dups and unstandardized spelling of geo cities. However, the geo state values were in ISO 2 digit format like the customers and sellers table. We sanitized the geo city column by using python unicodedata library to normalize the spelling, convert to ASCII to match the city format in the customers and sellers table. Then we clean up the dups by grouping zip, city, and state, and taking the average of latitudes and longitudes in that grouping and generate a geo ID that can be assign to customers and sellers. The final clean output was 19.6K from over 1M records.
+
+
+### Phase Two - Cleaning the Data
+With dirty data you will find yourself creating problems. More problems equals wasted resources and businesses want to make money not hemorrhage money. With that being said, the process was first started by looking for four commom types of dirty data (Duplicates, errors, unnecessary information, or missing information). 
+
+**The Filth**
+- Right off that bat, Mandy was able to identify the filth in our data. The geolocation data had some inconsistencies in the spelling of cities and states. For example Through the data you would find the input for "city" in four different variations: SP, sp, sao paulo, or Sao Paulo. This created an issues with the data in three different ways - one, we're now prone to errors, two, we have unnecessary information as well, which in turn means our table size is much bigger than it needs to be (Table size bigger than it needs to be is our number three).
+This process was on a rinse and repeat cycle for the rest of the csv files.
+
+
+**The Wash**
+- The solution to the filth was simple. It must be **standardized** and **compressed**. By standardizing the data, Mandy was able to eliminate the possiblity of errors from inconsistences in spelling or variations of certain inputs. Now, for the unnecessary to become necessary, by grouping the latitude, longitude, state, and zip, and then taking the average of the latitude and longitude, where the state, city, and zip are the same (bare with us), the outcome cleaned up the duplicates and reduced the table size from one million records to nineteen thousand records! Now that is what we like to call, ***clean***.
+
+
 ![This is an image](/olist_ERD.png)
 
 ![This is an image](/olist_ERD_clean.png)
@@ -58,16 +72,7 @@ Before we can move further, we have to ensure that we have sufficent data to wor
 -Fill with the csv files here?
 
 
-### Phase Two - Cleaning the Data
-With dirty data you will find yourself creating problems. More problems equals wasted resources and businesses want to make money not hemorrhage money. With that being said, the process was first started by looking for four commom types of dirty data (Duplicates, errors, unnecessary information, or missing information). 
 
-**The Filth**
-- Right off that bat, Mandy was able to identify the filth in our data. The geolocation data had some inconsistencies in the spelling of cities and states. For example Through the data you would find the input for "city" in four different variations: SP, sp, sao paulo, or Sao Paulo. This created an issues with the data in three different ways - one, we're now prone to errors, two, we have unnecessary information as well, which in turn means our table size is much bigger than it needs to be (Table size bigger than it needs to be is our number three).
-This process was on a rinse and repeat cycle for the rest of the csv files.
-
-
-**The Wash**
-- The solution to the filth was simple. It must be **standardized** and **compressed**. By standardizing the data, Mandy was able to eliminate the possiblity of errors from inconsistences in spelling or variations of certain inputs. Now, for the unnecessary to become necessary, by grouping the latitude, longitude, state, and zip, and then taking the average of the latitude and longitude, where the state, city, and zip are the same (bare with us), the outcome cleaned up the duplicates and reduced the table size from one million records to nineteen thousand records! Now that is what we like to call, ***clean***.
 
 
 ### Phase Three - Construction
