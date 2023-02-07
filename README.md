@@ -27,7 +27,7 @@ This project reviews and analysis churn on a set of relational orders & products
 9. Geolocation
 
 
-We identify churn by segmenting the database using an RFM machine learning model and define it by.... We then use these segments as labels in an AUC model to predict churn. In addition we engineered an addition XXX features to bring the accuracy rate to 86%. 
+The data for churn prediction is labeled based on the outcome of recency frequncy monetary (RFM) customer segmentation technique. Differnt machine learning models were tested and evaulated using on 5-fold cross validation. Several evaluation metrics are collected and compared to identify the best model in terms of execution time and models' prediction perfromnce, such as: accuarcy, precision, recall, and AUC. The results showed that ensemble learning models (random forest and gradient boosting) are the best with AUC of 86%. 
 
 ## Dataset Summary and Challenges
 
@@ -81,8 +81,11 @@ Before we can move further, we have to ensure that we have sufficent data to wor
 
 **TODO- Shrouq**
 
-Here, we will walk you through the construction of our machine learning models and challenges that we faced.
+To get labeled data for customer churn, RFM customer segmention is used. RFM segment customers based on when their last purchase was, how often they've purchased in the past, and how much they've spent overall. Based on those features, the customers can be divided into 11 main segemnts as below. 
 
+<img width="823" alt="Screenshot 2023-02-07 at 1 37 34 PM" src="https://user-images.githubusercontent.com/48078471/217371953-2de54331-d0dd-4940-a975-57d4957b8092.png">
+
+Customers with category of "At Risk", "Hibernating customers", and "Lost" are labeled as chrun customers, while the remaining are labeled as no churn.
 
 **Recency, Frequency, Monetary**
 
@@ -119,16 +122,29 @@ We take our new data, create the labels, assign them, and then we add the segmen
 <img src="Images/RFM_Segmentation.png" width=950>
 
 
-**Transformation**
-
-
 From here we transform the data into what will show us the answers we've been working towards.
-
-  
 
 <img src="Images/Distribution_of_Segments.png" width=950>
 
+**Feature Engineering for Churn Prediction**
 
+To improve the churn prediction performnce, approratie feature are constructed from the data, as follows:
+
+- Customer state
+- Seller state
+- Delivery_time
+- review_upload_time
+- debt_customer
+- cash_customer
+- Working Days Estimated Delivery Time: Gets the days between order approval and estimated delivery date. A customer might be unsatisfied if he is told that the estimated time is big.
+- Working Days Actual Delivery Time: Gets the days between order approval and delivered customer date. A customer might be more satisfied if he gets the product faster.
+- Working Days Delivery Time Delta: The difference between the actual and estimated date. If negative was delivered early, if positive was delivered late. A customer might be more satisfied if the order arrives sooner than expected, or unhappy if he receives after the deadline
+- Is Late: Binary variable indicating if the order was delivered after the estimated date.
+- Product category
+- Review score
+- Freight value
+- Payment value
+- Payment installments
 
 ## Results
 - Fill with our outcomes/images  
