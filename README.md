@@ -138,24 +138,24 @@ We want to establish the the value of the below variables:
 #### Support ####
 Support refers to the popularity of item and can be calculated by finding the number of transactions containing a particular item divided by the total number of transactions.
 
-Support(diaper) = (Transactions containing (diaper))/(Total Transactions)
-Support(diaper) = 150 / 1000 = 15 %
+$Support(diaper) = (Transactions containing (diaper))/(Total Transactions)$
 
 #### Confidence ####
 Confidence refers to the likelihood that an item B is also bought if item A is bought. It can be calculated by finding the number of transactions where A and B are bought together, divided by the total number of transactions where A is bought. Mathematically, it can be represented as:
 
-Confidence(A → B) = (Transactions containing both (A and B))/(Transactions containing A)
+$Confidence(A → B) = (Transactions containing both (A and B))/(Transactions containing A)$
 
 #### Lift ####
 Lift refers to the increase in the ratio of the sale of B when A is sold.
-Lift(A –> B) can be calculated by dividing Confidence(A -> B) divided by Support(B).
-Mathematically it can be represented as:
-Lift(A→B) = (Confidence (A→B))/(Support (B))
+Lift(A –> B) can be calculated by dividing Confidence(A -> B) divided by Support(B).  
 
-Lift(milk → diaper) = (Confidence (milk → diaper))/(Support (diaper))
-Lift(milk → diaper) = 25 / 15 = 1.66
+Mathematically it can be represented as:  
 
-#### Steps involved in APriori Algorithm ####
+$Lift(A→B) = (Confidence (A→B))/(Support (B))$
+
+$Lift(milk → diaper) = (Confidence (milk → diaper))/(Support (diaper))$
+
+#### Steps involved in Apriori Algorithm ####
 
 For larger dataset, this computation can make the process extremely slow.
 To speed up the process, we need to perform the following steps:
@@ -165,9 +165,10 @@ To speed up the process, we need to perform the following steps:
 3. Select all the rules from the subsets with confidence value higher than the minimum threshold.
 4. Order the rules by descending order of Lift.
 
-##### Working on our dataset #####
+### Working on our dataset ###
 
-**Importing and preparing our dataset**
+**Importing and preparing our dataset**  
+
 For this we first identified tables that are required and merged them. These are the tables that were merged:
 1. olist_products_dataset.csv
 2. product_category_name_translation.csv
@@ -177,26 +178,35 @@ For this we first identified tables that are required and merged them. These are
 
 
 After merging these tables, we get a dataframe like this:
-Images 1
-<img src="Images/Merged_Table_1.png" width=320>    
 
-**Data Preprocessing**
+<img src="Images/Merged_Table_1.png">    
+
+**Data Preprocessing**  
+
 The Apriori library requires the dataset to be in the form of list of lists of transactions. We then prepare this.
-Next step, we identify the columns that we need to get the list of transactions made by customers
-<img src="Images/customer_transactions_list_2.png" width=320>   
+Next step, we identify the columns that we need to get the list of transactions made by customers.  
 
-**Using Apriori**
-We now identify the frequent item sets by implementing apriori on our encoded list of lists, with a minimum of support of 0.001
-<img src="Images/frequent_itemsets_3.png" width=320> 
+<img src="Images/customer_transactions_list_2.png">   
 
-We now create association rules with frequent itemsets and we get 26 rules in all.
-<img src="Images/association_rules_4.png" width=320> 
+**Using Apriori**  
 
-With this we now sort the rules to get rules with highest lift.
-<img src="Images/lookup_table_5.png" width=320> 
+We now identify the frequent item sets by implementing apriori on our encoded list of lists, with a minimum of support of 0.001  
 
-From the lookup table we can see that the rule that works best is:
-<img src="Images/final_products_6.png" width=320> 
+<img src="Images/frequent_itemsets_3.png">  
+
+
+We now create association rules with frequent itemsets and we get 26 rules in all.  
+
+<img src="Images/association_rules_4.png">  
+
+
+With this we now sort the rules to get rules with highest lift.  
+
+<img src="Images/lookup_table_5.png"> 
+
+From the lookup table we can see that the rule that works best is:  
+
+<img src="Images/final_products_6.png"> 
 
 
 
