@@ -132,13 +132,13 @@ Having access to explicit data that users have provided is not possible in this 
 
 ### Initial Data Exploration ###  
 
-### Top popular products ###  
+#### Top popular products ####  
 
-<img src="Images/top_10_popular_products.png">  
+<img src="Images/top_10_popular_products.png" width=950>  
 
-### High Revenue Products ###  
+#### High Revenue Products ####  
 
-<img src="Images/top_10_high_revenue_products.png"> 
+<img src="Images/top_10_high_revenue_products.png" width=950> 
 
 ### Selecting the Algorithm ###
 Association Rule Mining(ARM) can be used to provide session-based recommendations and Apriori is one such widely accepted ARM algorithm. We wanted to establish rules to see if there were products pairs being purchased together, or what is the association of one product with the others.
