@@ -57,8 +57,6 @@ The Results from predicting churn = ***customer retention, satisfaction, and a g
 
 ### Phase One - Exploring the Data
 
-**TODO - Armine - Compress visuals into a single dashboard**  
-
 <img src="tableau/Tableau_Time_Series.png">  
 
 Data captured over the past 2 years
