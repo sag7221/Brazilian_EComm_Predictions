@@ -134,7 +134,7 @@ To improve the churn prediction performnce, appropriate features are constructed
 - Payment value
 - Payment installments
 
-The output variable is "Is churn", a binary variable indicating if the customer has churned or not. 
+The target variable is "Is churn", a binary variable indicating if the customer has churned or not. 
 
 **Handling Imbalanced Dataset for Churn Prediction**
 
