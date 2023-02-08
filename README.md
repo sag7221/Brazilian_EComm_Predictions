@@ -257,5 +257,8 @@ From the lookup table we can see that the rule that works best is:
 
 
 ## Summary and Recommendations
-- Recommendations from our findings
+- Avg delivery time & payment values & review score are the key factors impacting churn
+- RUS outperforms other class balancing techniques for churn prediction
+- Ensemble models (RF, GB) outperforms other models with efficient training time for churn prediction
+
 
