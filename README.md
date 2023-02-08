@@ -68,8 +68,6 @@ Before we can move further, we have to ensure that we have sufficent data to wor
 
 ### Phase Three - Construction
 
-**TODO- Shrouq**
-
 To get labeled data for customer churn, RFM customer segmention is used. RFM segment customers based on when their last purchase was, how often they've purchased in the past, and how much they've spent overall. Based on those features, the customers can be divided into 11 main segemnts as below. 
 
 <img width="823" alt="Screenshot 2023-02-07 at 1 37 34 PM" src="https://user-images.githubusercontent.com/48078471/217371953-2de54331-d0dd-4940-a975-57d4957b8092.png">
