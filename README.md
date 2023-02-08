@@ -168,11 +168,11 @@ Having access to explicit data that users have provided is not possible in this 
 
 #### Top popular products ####  
 
-<img src="Images/top_10_popular_products.png" width=950>  
+<img src="Images/top_10_popular_products.png" width=850>  
 
 #### High Revenue Products ####  
 
-<img src="Images/top_10_high_revenue_products.png" width=950> 
+<img src="Images/top_10_high_revenue_products.png" width=850> 
 
 ### Selecting the Algorithm ###
 Association Rule Mining(ARM) can be used to provide session-based recommendations and Apriori is one such widely accepted ARM algorithm. We wanted to establish rules to see if there were products pairs being purchased together, or what is the association of one product with the others.
@@ -252,7 +252,7 @@ With this we now sort the rules to get rules with highest lift.
 
 From the lookup table we can see that the rule that works best is:  
 
-<img src="Images/final_products.png"> 
+<img src="Images/final_products.png" width=400> 
 
 
 
