@@ -154,6 +154,9 @@ Several evaluation metrics are collected through the k-fold cross-validation to 
 
 <img width="537" alt="Screenshot 2023-02-07 at 2 21 55 PM" src="https://user-images.githubusercontent.com/48078471/217380191-9934bcf9-977c-41c0-871e-1ea7fe70cf82.png">
 
+<img width="1161" alt="Screenshot 2023-02-08 at 3 29 17 PM" src="https://user-images.githubusercontent.com/48078471/217675213-1c3b855f-b9b6-46ef-8c02-5ae0e31fa7cf.png">
+
+
 ## Product Recommendations and Market Basket Analysis
 Given that we have done customer segmentation and have identified the churn, we are now targetting the other segments to retain customers and provide a better experience through our product recommendation system.
 
