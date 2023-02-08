@@ -33,6 +33,8 @@ The data for churn prediction is labeled based on the outcome of recency frequnc
 
 The overall dataset was in good shape with the exception of the geolocation table. The table contained over 1M records with dups and unstandardized spelling of geo cities. However, the geo state values were in ISO 2 digit format like the customers and sellers table. We sanitized the geo city column by using python unicodedata library to remove unicode characters, normalize the spelling by converting it to lower case to match the format in the customers and sellers table, lastly we dedup. Since there are multiple geo coords for a group of zip, city, and state vlues, we took the average of latitudes and longitudes in that grouping and generate a geo ID. Lastly we map the geoID to the customers and sellers table. The final clean output was 19.6K from over 1M records in the geolocation table. However we were unable to map 136 seller accounts out of 3095 and 302 records out of 99K on the customers table.  
 
+The ERDs below shows the relationship before and after the normalization of the geolocation table.
+
 
 ![This is an image](/olist_ERD.png)
 
