@@ -36,12 +36,9 @@ The overall dataset was in good shape with the exception of the geolocation tabl
 The ERDs below shows the relationship before and after the normalization of the geolocation table.
 
 
-![This is an image](/olist_ERD.png)
+![ERD Before Cleanup](data/olist_ERD.png)
 
-![This is an image](/olist_ERD_clean.png)
-
-
-
+![ERD after Claenup](data/olist_ERD_clean.png)
 
 
 The Results from predicting churn = ***customer retention, satisfaction, and a great revenue source.***
