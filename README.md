@@ -252,7 +252,7 @@ With this we now sort the rules to get rules with highest lift.
 
 From the lookup table we can see that the rule that works best is:  
 
-<img src="Images/final_products.png" width=400> 
+<img src="Images/final_products.png" width=300> 
 
 
 
