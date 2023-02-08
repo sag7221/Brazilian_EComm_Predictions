@@ -58,8 +58,6 @@ The Results from predicting churn = ***customer retention, satisfaction, and a g
 
 Data captured over the past 2 years
 
-<img src="tableau/Performance_tableau.png">  
-
 
 Before we can move further, we have to ensure that we have sufficent data to work with. When you're trying to predict churn, you will need, both qualitative and quantitative customer data. Within those two data types you will find the features that you will need for your machine learning models. Looking through the data, we made a consensus that we had sufficent data to progress further. It's important to note that with insufficent data, you will encounter inaccurate predictions when running your model. Do make sure you avoid making this mistake early on!
 
