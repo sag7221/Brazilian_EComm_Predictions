@@ -150,8 +150,6 @@ Different ML models are tested for churn prediction, such as: ensemble models (r
 
 Several evaluation metrics are collected through the k-fold cross-validation to better refelct the perfromnce under highly imbalanced dataset, such as: accurcay, recall, precision, AUC. The model excution time is comapred as well. The results indicated that Random forest & gradient boosting are the best with AUC of 88%.
 
-<img width="1099" alt="Screenshot 2023-02-07 at 2 21 45 PM" src="https://user-images.githubusercontent.com/48078471/217380164-237b2972-0441-42b8-b62b-9929845c6a9e.png">
-
 <img width="537" alt="Screenshot 2023-02-07 at 2 21 55 PM" src="https://user-images.githubusercontent.com/48078471/217380191-9934bcf9-977c-41c0-871e-1ea7fe70cf82.png">
 
 <img width="1161" alt="Screenshot 2023-02-08 at 3 29 17 PM" src="https://user-images.githubusercontent.com/48078471/217675213-1c3b855f-b9b6-46ef-8c02-5ae0e31fa7cf.png">
