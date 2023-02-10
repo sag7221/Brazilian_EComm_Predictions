@@ -4,7 +4,7 @@
 Identify, Predict and Prevent Churn
 
 ## Team Members
-* Shilpa Gollamudi ***(Team Leader)***
+* Shilpa Gollamudi
 * Mandy Fu
 * Shrouq Alelaumi
 * Armine Khananyan
